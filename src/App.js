@@ -14,16 +14,19 @@ export default function App() {
   };
   return (
     // Updates background-color
-    <div
-      className="App"
-      style={{
-        backgroundColor: hex,
-      }}
-    >
-      Generated Color: {hex}
+    <div className="App">
+      <div
+        style={{
+          backgroundColor: hex,
+        }}
+      >
+        Generated Color:{hex}
+      </div>
       <div>
         <br />
+        <br />
         <button onClick={randomHex}>Generate</button>
+        console.log(randomHex);
       </div>
     </div>
   );

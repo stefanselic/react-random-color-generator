@@ -1,5 +1,5 @@
 /* Styling background */
-.App {
+.App div {
   background-color: #ffffff;
   padding: 40px;
   height: 100vh;
@@ -15,8 +15,8 @@
 .App button {
   font-family: sans-serif;
   font-size: 30px;
-  margin-bottom: 60px;
-  margin-left: 90px;
+  margin-bottom: 180vh;
+  margin-left: 27vh;
   padding: 30px;
   align-items: center;
   color: white;
