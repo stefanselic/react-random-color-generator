@@ -2,25 +2,28 @@ import './App.css';
 import { useState } from 'react';
 
 export default function App() {
+  // Defining state variable
   const [hex, setHex] = useState('#ffffff');
-  const randomizedHex = () => {
+
+  // randomHex function generates a random hexadecimal
+  const randomHex = () => {
     const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
 
+    // Sets the state variable hex to this random color using the setHex function
     setHex(randomColor);
   };
   return (
+    // Updates background-color
     <div
       className="App"
       style={{
         backgroundColor: hex,
-        minHeight: '33.34vh',
-        overflow: 'hidden',
       }}
     >
+      Generated Color: {hex}
       <div>
         <br />
-        <p id="hex-code">Generated Color: {hex}</p>
-        <button onClick={randomizedHex}>Generate</button>
+        <button onClick={randomHex}>Generate</button>
       </div>
     </div>
   );
