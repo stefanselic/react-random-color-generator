@@ -20,7 +20,7 @@ export default function App() {
         backgroundColor: hex,
       }}
     >
-      Generated Color: {hex}
+      Generated Color: {hex} <br />
       <br />
       <div>
         <br />
